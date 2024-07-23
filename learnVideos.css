@@ -1,5 +1,4 @@
 /* General Styles */
-/* Add specific styles for the learn videos section */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +6,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
@@ -14,20 +14,49 @@ header {
     padding: 1em 0;
 }
 
+/* Main Content Styles */
 main {
     padding: 2em;
     text-align: center;
 }
 
+/* Video Container Styles */
 #videosContainer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
+/* Video Item Styles */
+.video-item {
+    flex: 1 1 calc(33.333% - 20px); /* Three items per row with some gap */
+    max-width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+/* Video Element Styles */
 video {
-    width: 45%;
-    margin: 1em 0;
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Video Title Styles */
+.video-title {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Video Description Styles */
+.video-description {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
 }
 
 
