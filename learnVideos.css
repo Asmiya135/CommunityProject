@@ -1,62 +1,40 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-/* Header Styles */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #4CAF50;
+    color: white;
     text-align: center;
     padding: 1em 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Main Content Styles */
 main {
     padding: 2em;
     text-align: center;
 }
 
-/* Video Container Styles */
 #videosContainer {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    justify-content: center;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+    align-items: center;
 }
 
-/* Video Item Styles */
-.video-item {
-    flex: 1 1 calc(33.333% - 20px); /* Three items per row with some gap */
-    max-width: calc(33.333% - 20px);
-    box-sizing: border-box;
-}
-
-/* Video Element Styles */
 video {
-    width: 50%;
-    height: auto;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 1em 0;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
 }
-
-/* Video Title Styles */
-.video-title {
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 10px;
-}
-
-/* Video Description Styles */
-.video-description {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: 5px;
-}
-
 
