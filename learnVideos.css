@@ -1,40 +1,70 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
 }
 
+/* Header Styles */
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 1em 0;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Main Content Styles */
 main {
     padding: 2em;
     text-align: center;
 }
 
+/* Video Container Styles */
 #videosContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Video Item Styles */
+.video-item {
+    flex: 1 1 calc(33.333% - 20px); /* Three items per row with some gap */
+    max-width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
+/* Video Element Styles */
 video {
-    width: 80%;
-    margin: 1em 0;
-    border: 2px solid #4CAF50;
-    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Video Title Styles */
+.video-title {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Delete Button Styles */
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
