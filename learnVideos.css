@@ -37,7 +37,7 @@ main {
 
 /* Video Element Styles */
 video {
-    width: 100%;
+    width: 50%;
     height: auto;
     border: 2px solid #ccc;
     border-radius: 5px;
